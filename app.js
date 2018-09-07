@@ -19,6 +19,8 @@ app.use(route.post('/telegram', ctx => {
         };
 
         ctx.body = response;
+    } else {
+        ctx.body = {};
     }
 }));
 
